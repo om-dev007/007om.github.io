@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    line-height: 1.6;
+    margin: 0px 20px;
+    background-color: black;
+    color: white;
+
+}
+main {
+    margin: 0px 135px;
+} 
+footer {
+    margin: 0px 135px;
+}
+a {
+    text-decoration: none;
+    color: #004cff;
+}
+
+.box1 {
+    background-color: #000;
+    height: 70px;
+    width: 100%;
+}
+.lst {
+    list-style: none;
+    display: flex;
+    position: relative;
+    right: -90px;
+}
+.lst li {
+    margin-right: 20px;
+}
+header {
+    position: sticky;
+    height: 80px;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+} 
+h2 {
+    scroll-margin-top: 90px;
+}
+ul {
+    list-style: none;
+}
+.cont h1 {
+    font-size: 1.5em;
+}
+.mainnav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;  /* optional: limits width */
+    margin: 0 auto;     /* optional: centers the nav */
+    padding: 0 20px;
+}
+.image2 {
+    width: 95vw;
+    height: 100vh;
+    filter: blur(2px) brightness(0.5);
+    z-index: -1;
+    margin: 0px 15px;
+    margin-bottom: 77px;
+    padding: 0px 50px;
+    padding-right: 80px;
+}
+.image1 {
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    z-index: 1;
+    position: absolute;
+    top: 180px;
+    left: 520px;
+    filter: brightness(0.5) blur(0.1px) ;
+}
+.myname {
+    position: absolute;
+    z-index: 1;
+    top: 500px;
+    left: 490px;
+}
+#about {
+    position: absolute;
+    left: 600px;
+}
+.stnav {
+    padding-top: 100px;
+}
+.abouthr {
+    position: relative;
+    top: 62px;
+}
+#skills {
+    position: absolute;
+    left: 600px;
+    padding-top: 200px;
+    scroll-margin-top: -110px;
+}
+.skill li {
+    padding-top: 20px;
+}
+.skill {
+    padding-top: 270px;
+}
+.skillhr {
+    position: relative;
+    top: 260px;
+}
+#connect {
+    position: absolute;
+    left: 600px;
+    padding-top: 160px;
+}
+.rdhr {
+    position: relative;
+    top: 225px;
+}
+.contact {
+    padding-top: 260px;
+}
+.social li {
+    padding-top: 20px;
+}
+.rights {
+    padding-top: 0px;
+    position: absolute;
+    left: 600px;
+    font-size: smaller;    
+}
+.lst li a {
+    color: #9d9d9d;
+}
+.lst li a:hover {
+    color: white;
+}
+.omu a{
+    color: #9d9d9d;
+    font-size: 0.9em;
+    width: 178px;
+    height: 20px;
+    padding: 15px;
+    margin-left: -15;
+    position: relative;
+    padding-left: 0px;
+    left: -80px;
+
+}
+.omu a:hover {
+    color: white;
+    /* background-color: #ddd; */
+}
+section {
+    scroll-margin-top: 80px;
+}
+.social {
+    display: flex;
+}
+.social li {
+    padding-right: 39px;
+    position: relative;
+    left: 380px;
+}
+.fa-brands {
+    color: white;
+}
+.fa-brands:hover {
+    color: blue;
+}
+.fa-github {
+    color: white;
+}
+.fa-github:hover {
+    color: blue;
+}
+.fa-envelope {
+    color: white;
+}
+.fa-envelope:hover  {
+    color: blue;
+}
+.fa-quora {
+    color: white;
+}
+.fa-quora:hover {
+    color: blue;
+}
