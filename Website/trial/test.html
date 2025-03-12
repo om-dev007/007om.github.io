@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="png" href="icon.png" />
+    <script src="https://kit.fontawesome.com/3f0fe3ab88.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Om / Developer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            line-height: 1.8;
+            font-size: 20px;
+            background-color: #000;
+            color: #fff;
+            scroll-behavior: smooth;
+        }
+        main {
+            padding: 0em 10em;
+        }
+        footer {
+            padding: 0em 10em;
+        }
+        nav {
+            background-color: #000;
+            position: fixed;
+            z-index: 5;
+            width: 100%;
+            height: 8vh;
+            padding: 0em 1em;
+        }
+        ul {
+            display: inline-block;
+            position: absolute;
+            left: 82%;
+            z-index: 100;
+        }
+        ul li {
+            color: #9d9d9d;
+            display: inline-block;
+            padding: 0px 0.5em;
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+            color: #9d9d9d;
+        }
+        .omu {
+            color: #9d9d9d;
+            display: inline-block;
+            padding: 0px 1em;
+            position: relative;
+            right: 1%;
+        }
+        .coding {
+            height: 100vh;
+            position: relative;
+            width: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 0em 4em;
+            filter: blur(3px);
+            z-index: 1;
+        }
+        .omimg {
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 40%;
+            width: 20%;
+            border-radius: 50%;
+            position: absolute;
+            left: 40%;
+            top: 30%;
+            z-index: 2;
+            transition-property: all;
+            transition-duration: 0.3s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 0.1ms;
+            filter: brightness(0.6);
+        }
+        .intro {
+            position: absolute;
+            top: 70%;
+            left: 38%;
+            z-index: 4;
+        }
+        .omimg:hover {
+            transform: scale(1.1);
+        }
+        p {
+            text-align: justify;
+        }
+        h2 {
+            scroll-margin-top: 10vh;
+            margin: 10px 0px;
+        }
+        
+        hr {
+            margin: 20px 0px;
+        }
+        #about {
+            text-align: center;
+        }
+        .about {
+            padding-top: 65px;
+            padding-bottom: 65px;
+            position: relative;
+            top: -15%;
+        }
+        #skills {
+            text-align: center;
+        }
+        .skills {
+            padding-top: 65px;
+            padding-bottom: 65px;
+        }
+        #contact {
+            text-align: center;
+        }
+        .fa-user {
+            position: relative;
+            right: 10px;
+            top: -2px;
+        }
+        .contact {
+            padding-top: 65px;
+            padding-bottom: 65px;
+        }
+        .fa-brands {
+            position: relative;
+            display: inline-block;
+            font-size: 50px;
+            left: 20%;
+            color: white;
+        }
+        .fa-c {
+            position: relative;
+            display: inline-block;
+            font-size: 50px;
+            left: 20%;
+        }
+        
+        @media (min-width:2559px) and (max-width:2560px) {
+            header {
+                width: 100%;
+                height: 8%;
+            }
+            .omimg {
+                height: 20%;
+                width: 20%;
+                border-radius: 50%;
+                position: relative;
+                left: 40%;
+                top: -30em;
+                z-index: 5;
+                filter: brightness(0.6);
+            }
+            .coding {
+                height: 100vh;
+                width: 100%;
+                position: relative;
+                background-position: center;
+                background-repeat: no-repeat;
+                filter: blur(3px);
+                z-index: 1;
+                padding: 0em;
+            }
+            main {
+                padding: 0em 3em;
+            }
+            .intro {
+                top: 60%;
+                left: 39%;
+                z-index: 5;
+            }
+            .omu {
+                position: absolute;
+                font-size: 2.8em;
+                left: -2%;
+            }
+            ul {
+                display: inline-block;
+                position: relative;
+                left: 76%;
+                font-size: 2.5em;
+            }
+        }
+        @media (min-width:1439px) and (max-width:1440px) {
+            header {
+                width: 100%;
+                height: 8%;
+            }
+            .omimg {
+                height: 20%;
+                width: 20%;
+                border-radius: 50%;
+                position: relative;
+                left: 40%;
+                top: -30em;
+                z-index: 5;
+                filter: brightness(0.6);
+            }
+            .coding {
+                height: 100vh;
+                width: 100%;
+                position: relative;
+                background-position: center;
+                background-repeat: no-repeat;
+                filter: blur(3px);
+                z-index: 1;
+                padding: 0em;
+            }
+            main {
+                padding: 0em 3em;
+            }
+            .intro {
+                top: 60%;
+                left: 39%;
+                z-index: 5;
+            }
+            .omu {
+                position: absolute;
+                font-size: 1.5em;
+                left: -2%;
+            }
+            ul {
+                display: inline-block;
+                position: relative;
+                left: 76%;
+                font-size: 1.39em;
+            }
+        }
+        @media (min-width:769px) and (max-width:1024px) {
+            header {
+                width: 100%;
+                height: 7%;
+            }
+            .omimg {
+                height: 20%;
+                width: 20%;
+                border-radius: 50%;
+                position: relative;
+                left: 40%;
+                top: -20em;
+                z-index: 5;
+                filter: brightness(0.6);
+            }
+            .coding {
+                height: 100vh;
+                width: 100%;
+                position: relative;
+                background-position: center;
+                background-repeat: no-repeat;
+                filter: blur(3px);
+                z-index: 1;
+                padding: 0em;
+            }
+            main {
+                padding: 0em 3em;
+            }
+            .intro {
+                top: 63%;
+                left: 36%;
+                z-index: 5;
+            }
+            .omu {
+                position: relative;
+                right: 5%;
+            }
+            ul {
+                display: inline-block;
+                position: relative;
+                left: 61%;
+            }
+        }
+        @media (min-width:0px) and (max-width:320px) {
+            header {
+                width: 100%;
+                height: 7%;
+            }
+            .omimg {
+                height: 20%;
+                width: 20%;
+                border-radius: 50%;
+                position: relative;
+                left: 40%;
+                top: -10em;
+                z-index: 2;
+                filter: brightness(0.6);
+            }
+            .coding {
+                height: 50vh;
+                width: 100%;
+                position: relative;
+                background-position: center;
+                background-repeat: no-repeat;
+                padding: 0em 0em;
+                filter: blur(2px);
+                z-index: 1;
+            }
+            .omu {
+                font-size: 0.8em;
+                padding: 0em;
+                position: relative;
+                right: 13%;
+            }
+            ul li {
+                color: #9d9d9d;
+                display: inline-block;
+                padding: 0px 0.1em;
+                font-size: 0.7em;
+            }
+            ul {
+                display: inline-block;
+                position: relative;
+                left: 18%;
+            }
+            main {
+                padding: 0em 1.1em;
+            }
+            .intro {
+                font-size: 0.7em;
+                top: 26%;
+                left: 35%;
+                z-index: 5;
+            }
+        }
+        @media (min-width:321px) and (max-width:375px) {
+            header {
+                width: 100%;
+                height: 7%;
+            }
+            .omimg {
+                height: 20%;
+                width: 20%;
+                border-radius: 50%;
+                position: relative;
+                left: 40%;
+                top: -10em;
+                z-index: 2;
+                filter: brightness(0.6);
+            }
+            .coding {
+                height: 50vh;
+                width: 100%;
+                position: relative;
+                background-position: center;
+                background-repeat: no-repeat;
+                padding: 0em 0em;
+                filter: blur(2px);
+                z-index: 1;
+            }
+            .omu {
+                font-size: 0.9em;
+                padding: 0em;
+                position: relative;
+                right: 11%;
+            }
+            ul li {
+                color: #9d9d9d;
+                display: inline-block;
+                padding: 0px 0.1em;
+                font-size: 0.7em;
+            }
+            ul {
+                display: inline-block;
+                position: relative;
+                left: 28%;
+            }
+            main {
+                padding: 0em 1.1em;
+            }
+            .intro {
+                font-size: 0.7em;
+                top: 28%;
+                left: 37%;
+                z-index: 5;
+            }
+        }
+        @media (min-width:376px) and (max-width:425px) {
+            header {
+                width: 100%;
+                height: 7%;
+            }
+            .omimg {
+                height: 20%;
+                width: 20%;
+                border-radius: 50%;
+                position: relative;
+                left: 40%;
+                top: -10em;
+                z-index: 2;
+                filter: brightness(0.6);
+            }
+            .coding {
+                height: 50vh;
+                width: 100%;
+                position: relative;
+                background-position: center;
+                background-repeat: no-repeat;
+                padding: 0em 0em;
+                filter: blur(2px);
+                z-index: 1;
+            }
+            .omu {
+                font-size: 0.9em;
+                padding: 0em;
+                position: relative;
+                right: 9%;
+            }
+            ul li {
+                color: #9d9d9d;
+                display: inline-block;
+                padding: 0px 0.12em;
+                font-size: 0.7em;
+            }
+            ul {
+                display: inline-block;
+                position: relative;
+                left: 37%;
+            }
+            main {
+                padding: 0em 1.1em;
+            }
+            .intro {
+                font-size: 0.7em;
+                top: 30%;
+                left: 38%;
+                z-index: 5;
+            }
+        }
+        @media (min-width:426px) and (max-width:768px) {
+            header {
+                width: 100%;
+                height: 7%;
+            }
+            .omimg {
+                left: 40%;
+                top: -16em;
+                height: 20%;
+                width: 20%;
+                border-radius: 50%;
+                position: relative;
+                z-index: 2;
+                filter: brightness(0.6);
+            }
+            .coding {
+                height: 70vh;
+                width: 100%;
+                position: relative;
+                background-position: center;
+                background-repeat: no-repeat;
+                padding: 0em 0em;
+                filter: blur(2px);
+                z-index: 1;
+            }
+            .omu {
+                font-size: 0.9em;
+                padding: 0em;
+                position: relative;
+                right: 5%;
+            }
+            ul li {
+                color: #9d9d9d;
+                display: inline-block;
+                padding: 0px 0.12em;
+                font-size: 0.7em;
+            }
+            ul {
+                display: inline-block;
+                position: relative;
+                left: 67%;
+            }
+            main {
+                padding: 0em 1.5em;
+            }
+            .intro {
+                top: 40%;
+                font-size: 1.2em;
+                left: 38%;
+                z-index: 5;
+            }
+        }        
+    </style>
+</head>
+
+<body>
+        <div class="navbar">
+            <nav class="nav-bar">
+                <div class="omu"><a href="#">Om Narayan</a></div>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div>
+            <img class="coding" src="./Coding.jpg" alt="Coding" />
+        </div>
+        <img class="omimg" src="om.jpg" alt="om" />
+        <h1 class="intro">Hi, I'm Om Narayan</h1>
+    <main>
+        <div class="about">
+            <h2 id="about">
+                <i class="fa-solid fa-user"></i>About Me
+            </h2>
+            <hr style="opacity: 0.60;" >
+            <p>
+                Hello! I'm Om Narayan Kumar, a first-year CSE student at St. Andrew's institute of technology & Management.I'm passionate about coding and currently praciticing JavaScript to enhance my web development skill. My goal is to become a skilled engineer and build impactful projects.
+            <br>
+            <br>
+                When I'm not engrossed in developing or debugging code, you'll likely find me on a badminton court or close to a cricket field.I'm always eager to learn new skills.whether it's from books or websites. I also enjoy playing FIFA with my buddies and indulging in entertaining   episodes or movies online, mostly on Netflix.
+            </p>
+        </div>
+        <div class="skills">
+            <h2 id="skills"><i class="fa-solid fa-chart-column"></i> Skills</h2>
+            <hr style="opacity: 0.60;" >
+            <div class="c"><i class="fa-solid fa-c fa-3x"></i></div>
+            <div class="html"><i class="fa-brands fa-html5 fa-3x" style="color: rgb(277, 79, 38);"></i></div>
+            <div class="css"><i class="fa-brands fa-css3-alt fa-3x" style="color: rgb(21, 114, 182);"></i></div>
+            <div class="python"><i class="fa-brands fa-python fa-3x" style="color: rgb(41, 95, 167);"></i></div>
+            <div class="gitub"><i class="fa-brands fa-github fa-3x"></i></div>
+        </div>
+    </main>
+    <footer>
+        <div class="contact">
+        <h2 id="contact"><i class="fa-solid fa-users"></i>Contact</h2>
+        <hr style="opacity: 0.60;">
+        <p class="connection">Connecting with people in this Digital World is the easiest job out there. Come let's get connected and share our understandings and experiences about our interests.
+        </p>
+                <a href="https://github.com/om-dev007"><i class="fa-brands fa-github fa-3x"></i></a>
+                <a href="https://www.linkedin.com/in/kumarom/"><i class="fa-brands fa-linkedin-in fa-3x"></i></a>
+                <a href="https://www.quora.com/profile/Om-Kumar-2753"><i class="fa-brands fa-quora fa-3x"></i></a>
+                <a href="https://mailto:officialomnarayan@gmail.com"><i class="fa-solid fa-envelope fa-3x"></i></a>
+        <p class="rights">&copy; Om Narayan Kumar</p>
+    </div>
+    </footer>
+</body>
+</html>
+</body>
+</html>
