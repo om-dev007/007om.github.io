@@ -1,0 +1,1011 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.8;
+    font-size: 3vh;
+    background-color: #000;
+    color: #fff;
+    scroll-behavior: smooth;
+}
+
+main {
+    padding: 0vh 10vw;
+}
+
+footer {
+    padding: 0vh 10vw;
+}
+
+.nav-bar {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    background-color: #000;
+    position: fixed;
+    width: 100%;
+    height: 8vh;
+    padding: 0 2%;
+    z-index: 5;
+}
+
+ul li {
+    color: #9d9d9d;
+    padding: 1vh 0;
+}
+
+a {
+    text-decoration: none;
+    color: #9d9d9d;
+}
+
+li a:hover {
+    color: #fff;
+}
+
+.nav-links {
+    z-index: 10;
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    justify-self: end;
+    margin: 0;
+    padding: 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+.omu {
+    color: #9d9d9d;
+    padding: 0vh 0vw;
+    font-size: 1.3em;
+    justify-self: flex-start;
+}
+
+.omu a:hover {
+    color: #fff;
+}
+
+.coding {
+    height: 100vh;
+    position: relative;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0em 4em;
+    filter: blur(3px);
+    z-index: 1;
+}
+
+.omimg {
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 40%;
+    width: 20%;
+    border-radius: 50%;
+    position: absolute;
+    left: 40%;
+    top: 30%;
+    z-index: 2;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0.1ms;
+    filter: brightness(0.6);
+}
+
+.intro {
+    position: absolute;
+    top: 70%;
+    left: 38%;
+    z-index: 4;
+}
+
+.omimg:hover {
+    transform: scale(1.1);
+}
+
+p {
+    text-align: justify;
+}
+
+h2 {
+    scroll-margin-top: 10vh;
+    margin: 10px 0px;
+}
+
+hr {
+    margin: 20px 0px;
+}
+
+#about {
+    text-align: center;
+}
+
+.about {
+    padding-top: 65px;
+    padding-bottom: 65px;
+    position: relative;
+    top: -10%;
+}
+
+#skills {
+    text-align: center;
+}
+
+.skills {
+    padding-top: 65px;
+    padding-bottom: 65px;
+}
+
+#contact {
+    text-align: center;
+}
+
+.fa-user {
+    position: relative;
+    right: 10px;
+    top: -2px;
+}
+
+.fa-users {
+    position: relative;
+    right: 10px;
+}
+
+.contact {
+    padding-top: 65px;
+    padding-bottom: 65px;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.connection {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.connection a {
+    padding: 0em 0.5em;
+}
+
+.contact .rights {
+    text-align: center;
+}
+
+.fa-brands {
+    transition: all 0.3s ease-in-out;
+    color: #fff;
+}
+
+.fa-brands:hover {
+    transform: scale(1.2);
+    color: #0000ff;
+}
+
+.fa-c {
+    transition: all 0.3s ease-in-out;
+}
+
+.fa-c:hover {
+    transform: scale(1.2);
+    color: #0000ff;
+}
+
+.fa-envelope {
+    transition: all 0.3s ease-in-out;
+    color: #fff;
+}
+
+.fa-envelope:hover {
+    transform: scale(1.2);
+    color: #0000ff;
+}
+
+@media (min-width:2561px) {
+    body {
+        font-size: 3vh;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    .nav-bar {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: center;
+        background-color: #000;
+        position: fixed;
+        width: 100%;
+        height: 8vh;
+        padding: 0 2%;
+        z-index: 5;
+    }
+
+    li {
+        padding: 1vh 0vw;
+    }
+
+    .omimg {
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 40%;
+        width: 22%;
+        border-radius: 50%;
+        position: absolute;
+        left: 40%;
+        top: 30%;
+        z-index: 2;
+        filter: brightness(0.6);
+    }
+
+    .intro {
+        position: absolute;
+        top: 70%;
+        left: 38%;
+        z-index: 4;
+    }
+
+    .coding {
+        height: 100vh;
+        width: 100%;
+        position: relative;
+        background-position: center;
+        background-repeat: no-repeat;
+        filter: blur(8px);
+        z-index: 1;
+        padding: 0em 4em;
+    }
+
+    main {
+        padding: 0em 6em;
+    }
+
+    footer {
+        padding: 0em 6em;
+    }
+
+    .about {
+        padding: 3em 0em;
+    }
+
+    .skills {
+        padding: 3em 0em;
+    }
+
+    .contact {
+        padding: 3em 0em;
+    }
+
+    hr {
+        margin: 1em 0em;
+    }
+
+    .omu {
+        color: #9d9d9d;
+        font-size: 1.3rem;
+        padding: 0vh 0vw;
+        justify-self: flex-start;
+    }
+
+    .nav-links {
+        z-index: 10;
+        display: flex;
+        gap: 2rem;
+        list-style: none;
+        justify-self: end;
+        margin: 0;
+        padding: 0;
+        transition: transform 0.3s ease-in-out;
+    }
+}
+
+@media (min-width: 1441px) and (max-width: 2560px) {
+    body {
+        font-size: 3vh;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    .nav-bar {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: center;
+        background-color: #000;
+        position: fixed;
+        width: 100%;
+        height: 8vh;
+        padding: 0 2%;
+        z-index: 5;
+    }
+
+    li {
+        padding: 1vh 0vw;
+    }
+
+    .omimg {
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 40%;
+        width: 22%;
+        border-radius: 50%;
+        position: absolute;
+        left: 40%;
+        top: 30%;
+        z-index: 2;
+        filter: brightness(0.6);
+    }
+
+    .intro {
+        position: absolute;
+        top: 70%;
+        left: 38%;
+        z-index: 4;
+    }
+
+    .coding {
+        height: 100vh;
+        width: 100%;
+        position: relative;
+        background-position: center;
+        background-repeat: no-repeat;
+        filter: blur(6px);
+        z-index: 1;
+        padding: 0em 4em;
+    }
+
+    main {
+        padding: 0em 6em;
+    }
+
+    footer {
+        padding: 0em 6em;
+    }
+
+    .about {
+        padding: 5em 0em;
+    }
+
+    .skills {
+        padding: 5em 0em;
+    }
+
+    .contact {
+        padding: 5em 0em;
+    }
+
+    hr {
+        margin: 1em 0em;
+    }
+
+    .omu {
+        color: #9d9d9d;
+        font-size: 1.3rem;
+        padding: 0vh 0vw;
+        justify-self: flex-start;
+    }
+
+    .nav-links {
+        z-index: 10;
+        display: flex;
+        gap: 2rem;
+        list-style: none;
+        justify-self: end;
+        margin: 0;
+        padding: 0;
+        transition: transform 0.3s ease-in-out;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+    body {
+        font-size: 3vh;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    .nav-bar {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: center;
+        background-color: #000;
+        position: fixed;
+        width: 100%;
+        height: 8vh;
+        padding: 0 2%;
+        z-index: 5;
+    }
+
+    li {
+        padding: 1vh 0vw;
+    }
+
+    .omimg {
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 40%;
+        width: 20%;
+        border-radius: 50%;
+        position: absolute;
+        left: 40%;
+        top: 30%;
+        z-index: 2;
+        transition-property: all;
+        transition-duration: 0.3s;
+        transition-timing-function: ease-in-out;
+        transition-delay: 0.1ms;
+        filter: brightness(0.6);
+    }
+
+    .intro {
+        position: absolute;
+        top: 70%;
+        left: 38%;
+        z-index: 4;
+    }
+
+    .coding {
+        height: 100vh;
+        width: 100%;
+        position: relative;
+        background-position: center;
+        background-repeat: no-repeat;
+        filter: blur(4px);
+        z-index: 1;
+        padding: 0em 4em;
+    }
+
+    main {
+        padding: 0em 6em;
+    }
+
+    footer {
+        padding: 0em 6em;
+    }
+
+    .about {
+        padding: 4em 0em;
+    }
+
+    .skills {
+        padding: 4em 0em;
+    }
+
+    .contact {
+        padding: 4em 0em;
+    }
+
+    hr {
+        margin: 1em 0em;
+    }
+
+    .omu {
+        color: #9d9d9d;
+        font-size: 1.3rem;
+        padding: 0vh 0vw;
+        justify-self: flex-start;
+    }
+
+    .nav-links {
+        z-index: 10;
+        display: flex;
+        gap: 2rem;
+        list-style: none;
+        justify-self: end;
+        margin: 0;
+        padding: 0;
+        transition: transform 0.3s ease-in-out;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    body {
+        font-size: 3vh;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    .nav-bar {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: center;
+        background-color: #000;
+        position: fixed;
+        width: 100%;
+        height: 8vh;
+        padding: 0 2%;
+        z-index: 5;
+    }
+
+    li {
+        padding: 1vh 0vw;
+    }
+
+    .omimg {
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 40%;
+        width: 22%;
+        border-radius: 50%;
+        position: absolute;
+        left: 40%;
+        top: 30%;
+        z-index: 2;
+        transition-property: all;
+        transition-duration: 0.3s;
+        transition-timing-function: ease-in-out;
+        transition-delay: 0.1ms;
+        filter: brightness(0.6);
+    }
+
+    .intro {
+        position: absolute;
+        top: 70%;
+        left: 38%;
+        z-index: 4;
+    }
+
+    .coding {
+        height: 100vh;
+        width: 100%;
+        position: relative;
+        background-position: center;
+        background-repeat: no-repeat;
+        filter: blur(3px);
+        z-index: 1;
+        padding: 0em 4em;
+    }
+
+    main {
+        padding: 0em 6em;
+    }
+
+    footer {
+        padding: 0em 6em;
+    }
+
+    .about {
+        padding: 4em 0em;
+    }
+
+    .skills {
+        padding: 4em 0em;
+    }
+
+    .contact {
+        padding: 4em 0em;
+    }
+
+    .omu {
+        color: #9d9d9d;
+        font-size: 1.3rem;
+        padding: 0vh 0vw;
+        justify-self: flex-start;
+    }
+
+    .nav-links {
+        z-index: 10;
+        display: flex;
+        gap: 2rem;
+        list-style: none;
+        justify-self: end;
+        margin: 0;
+        padding: 0;
+        transition: transform 0.3s ease-in-out;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 320px) {
+
+    body {
+        font-size: 2vh;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    .nav-bar {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: center;
+        background-color: #000;
+        position: fixed;
+        width: 100%;
+        height: 8vh;
+        padding: 0 2%;
+        z-index: 6;
+    }
+
+    .omimg {
+        height: 20%;
+        width: 20%;
+        border-radius: 50%;
+        position: absolute;
+        left: 40%;
+        top: 13%;
+        z-index: 2;
+        filter: brightness(0.6);
+    }
+
+    .coding {
+        height: 50vh;
+        width: 100%;
+        position: relative;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 0em 2em;
+        filter: blur(2px);
+        z-index: 1;
+    }
+
+    .omu {
+        color: #9d9d9d;
+        font-size: 1.0rem;
+        padding: 0vh 0vw;
+        justify-self: flex-start;
+    }
+
+    .about {
+        padding: 2em 0em;
+    }
+
+    .skills {
+        padding: 2em 0em;
+    }
+
+    .contact {
+        padding: 2em 0em;
+    }
+
+    ul li {
+        color: #9d9d9d;
+        padding: 1vh 0vw;
+    }
+
+    .nav-links {
+        z-index: 10;
+        display: flex;
+        gap: 1rem;
+        list-style: none;
+        justify-self: end;
+        margin: 0;
+        padding: 0;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    main {
+        padding: 0em 4em;
+    }
+
+    footer {
+        padding: 0em 4em;
+    }
+
+    .intro {
+        font-size: 1.2em;
+        top: 35%;
+        left: 37%;
+        z-index: 5;
+    }
+
+    .fa-user {
+        position: relative;
+        right: 4px;
+        top: -1px;
+    }
+
+    .fa-users {
+        position: relative;
+        right: 5px;
+        top: -1px;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 375px) {
+    body {
+        font-size: 2vh;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    .nav-bar {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: center;
+        background-color: #000;
+        position: fixed;
+        width: 100%;
+        height: 8vh;
+        padding: 0 2%;
+        z-index: 6;
+    }
+
+    .omimg {
+        height: 20%;
+        width: 20%;
+        border-radius: 50%;
+        position: absolute;
+        left: 40%;
+        top: 13%;
+        z-index: 2;
+        filter: brightness(0.6);
+    }
+
+    .coding {
+        height: 50vh;
+        width: 100%;
+        position: relative;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 0em 2em;
+        filter: blur(2px);
+        z-index: 1;
+    }
+
+    .omu {
+        color: #9d9d9d;
+        font-size: 1rem;
+        padding: 0vh 0vw;
+        justify-self: flex-start;
+    }
+
+    ul li {
+        color: #9d9d9d;
+        padding: 1vh 0vw;
+    }
+
+    .nav-links {
+        z-index: 10;
+        display: flex;
+        gap: 1rem;
+        list-style: none;
+        justify-self: end;
+        margin: 0;
+        padding: 0;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    main {
+        padding: 0em 4em;
+    }
+
+    footer {
+        padding: 0em 4em;
+    }
+
+    .about {
+        padding: 2em 0em;
+    }
+
+    .skills {
+        padding: 2em 0em;
+    }
+
+    .contact {
+        padding: 2em 0em;
+    }
+
+    .intro {
+        font-size: 1.2em;
+        top: 35%;
+        left: 37%;
+        z-index: 4;
+    }
+
+    .fa-user {
+        position: relative;
+        right: 4px;
+        top: -1px;
+    }
+
+    .fa-users {
+        position: relative;
+        right: 5px;
+        top: -1px;
+    }
+}
+
+@media (min-width: 376px) and (max-width: 425px) {
+    body {
+        font-size: 2vh;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    .nav-bar {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: center;
+        background-color: #000;
+        position: fixed;
+        width: 100%;
+        height: 8vh;
+        padding: 0 2%;
+        z-index: 5;
+    }
+
+    .omimg {
+        height: 20%;
+        width: 20%;
+        border-radius: 50%;
+        position: absolute;
+        left: 40%;
+        top: 13%;
+        z-index: 2;
+        filter: brightness(0.6);
+    }
+
+    .coding {
+        height: 50vh;
+        width: 100%;
+        position: relative;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 0em 2em;
+        filter: blur(2px);
+        z-index: 1;
+    }
+
+    .omu {
+        color: #9d9d9d;
+        font-size: 1rem;
+        padding: 0vh 0vw;
+        justify-self: flex-start;
+    }
+
+    ul li {
+        color: #9d9d9d;
+        padding: 1vh 0;
+    }
+
+    .nav-links {
+        z-index: 10;
+        display: flex;
+        gap: 1rem;
+        list-style: none;
+        justify-self: end;
+        margin: 0;
+        padding: 0;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    main {
+        padding: 0em 4em;
+    }
+
+    footer {
+        padding: 0em 4em;
+    }
+
+    .about {
+        padding: 2em 0em;
+    }
+
+    .skills {
+        padding: 2em 0em;
+    }
+
+    .contact {
+        padding: 2em 0em;
+    }
+
+    .intro {
+        font-size: 1.2em;
+        top: 35%;
+        left: 38%;
+        z-index: 4;
+    }
+
+    .fa-user {
+        position: relative;
+        right: 4px;
+        top: -1px;
+    }
+
+    .fa-users {
+        position: relative;
+        right: 5px;
+        top: -1px;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+    body {
+        font-size: 2vh;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    .nav-bar {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: center;
+        background-color: #000;
+        position: fixed;
+        width: 100%;
+        height: 8vh;
+        padding: 0 2%;
+        z-index: 5;
+    }
+
+    .omimg {
+        left: 40%;
+        top: 23%;
+        height: 20%;
+        width: 20%;
+        border-radius: 50%;
+        position: absolute;
+        z-index: 2;
+        filter: brightness(0.6);
+    }
+
+    .coding {
+        height: 70vh;
+        width: 100%;
+        position: relative;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 0em 2em;
+        filter: blur(2px);
+        z-index: 1;
+    }
+
+    .omu {
+        padding: 0em;
+        font-size: 1rem;
+        justify-self: flex-start;
+    }
+
+    ul li {
+        color: #9d9d9d;
+        padding: 1vh 0;
+    }
+
+    .nav-links {
+        z-index: 10;
+        display: flex;
+        gap: 1rem;
+        list-style: none;
+        justify-self: end;
+        margin: 0;
+        padding: 0;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    main {
+        padding: 0em 4em;
+    }
+
+    footer {
+        padding: 0em 4em;
+    }
+
+    .about {
+        padding: 2em 0em;
+    }
+
+    .skills {
+        padding: 2em 0em;
+    }
+
+    .contact {
+        padding: 2em 0em;
+    }
+
+    .intro {
+        top: 45%;
+        font-size: 1.2em;
+        left: 38%;
+        z-index: 4;
+    }
+
+    .fa-user {
+        position: relative;
+        right: 4px;
+        top: -1px;
+    }
+
+    .fa-users {
+        position: relative;
+        right: 5px;
+        top: -1px;
+    }
+}
